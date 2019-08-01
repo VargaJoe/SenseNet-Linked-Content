@@ -1,0 +1,80 @@
+﻿<ContentType name="SoftLinkAction" parentType="Application" handler="SenseNet.LinkedContent.ContentHandlers.SoftLinkApplication" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>SoftLinkAction</DisplayName>
+  <Description></Description>
+  <Icon>Application</Icon>
+  <Fields>
+    <Field name="CustomUrl" type="ShortText">
+      <DisplayName>CustomUrl</DisplayName>
+    </Field>
+    <Field name="TargetLifeSpanWatch" type="Boolean">
+      <DisplayName>Target Node Lifespan Watch</DisplayName>
+    </Field>
+    <Field name="TargetPath" type="Reference">
+      <DisplayName>TargetPath</DisplayName>
+      <Description>Link path</Description>
+      <Configuration>
+        <AllowMultiple>false</AllowMultiple>
+        <SelectionRoot>
+          <Path>/Root</Path>
+        </SelectionRoot>
+      </Configuration>
+    </Field>
+    <Field name="ActionTypeName" type="ShortText">
+      <Configuration>
+        <DefaultValue>LinkAction</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="LinkContentTargetAction" type="Boolean">
+      <DisplayName>LinkContentTargetAction</DisplayName>
+    </Field>
+    <Field name="ContentTargetAction" type="ShortText">
+      <DisplayName>ContentTargetAction</DisplayName>
+    </Field>
+    <Field name="ContentTargetReference" type="ShortText">
+      <DisplayName>ContentTargetReference</DisplayName>
+    </Field>
+    <Field name="ContentTargetCustom" type="ShortText">
+      <DisplayName>ContentTargetCustom</DisplayName>
+    </Field>
+    <Field name="StatusCode" type="Choice">
+      <DisplayName>Http status code</DisplayName>
+      <Description>The Http status code to return upon request</Description>
+      <Configuration>
+        <AllowMultiple>false</AllowMultiple>
+        <Compulsory>true</Compulsory>
+        <Options>
+          <Option value="301">301 Moved permanently</Option>
+          <Option value="302">302 Moved Temporarily</Option>
+          <Option value="303">303 See other</Option>
+          <Option value="307">307 Temporary redirect</Option>
+          <Option value="403">403 Forbidden</Option>
+          <Option value="404">404 Not found</Option>
+          <Option value="410">410 Gone</Option>
+        </Options>
+      </Configuration>
+    </Field>
+    <Field name="ToBlank" type="Boolean">
+      <DisplayName>Megnyitás új ablakban</DisplayName>
+      <Description>Megnyitás új ablakban</Description>
+      <Configuration>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="UrlFragment" type="ShortText">
+      <Configuration>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="AllowQueryString" type="Boolean">
+      <Configuration>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+  </Fields>
+</ContentType>

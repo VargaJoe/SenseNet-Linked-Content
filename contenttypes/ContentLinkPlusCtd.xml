@@ -1,0 +1,21 @@
+﻿<ContentType name="ContentLinkPlus" parentType="ContentLink" handler="SenseNet.LinkedContent.ContentHandlers.ContentLinkPlus" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>Content Link Plus</DisplayName>
+  <Description>Content Link Plus</Description>
+  <Icon>ContentLink</Icon>
+  <Fields>
+    <Field name="LanguageReference" type="Reference">
+      <DisplayName>Language reference</DisplayName>
+      <Description></Description>
+      <AppInfo>Self</AppInfo>
+      <Indexing>
+        <Store>Yes</Store>
+      </Indexing>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+        <AllowMultiple>false</AllowMultiple>
+      </Configuration>
+    </Field>
+  </Fields>
+</ContentType>

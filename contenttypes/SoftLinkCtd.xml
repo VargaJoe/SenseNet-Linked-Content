@@ -1,0 +1,67 @@
+﻿<ContentType name="SoftLink" parentType="GenericContent" handler="SenseNet.ContentRepository.GenericContent" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>Soft Link</DisplayName>
+  <Description>Soft Link</Description>
+  <Icon>Link</Icon>
+  <Fields>
+    <Field name="Hidden" type="Boolean">
+      <DisplayName>Rejtett</DisplayName>
+      <Description>Nem jelenik meg menuben.</Description>
+      <Configuration>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="Index" type="Integer">
+      <DisplayName>$Ctd-GenericContent,Index-DisplayName</DisplayName>
+      <Description>$Ctd-GenericContent,Index-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="ToBlank" type="Boolean">
+      <DisplayName>Megnyitás új ablakba</DisplayName>
+      <Description>Megnyitás új ablakba</Description>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Hide</VisibleEdit>
+        <VisibleNew>Hide</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="Link" type="Reference">
+      <DisplayName>$Ctd-KelerLink,Link-DisplayName</DisplayName>
+      <Description>$Ctd-KelerLink,Link-Description</Description>
+      <Configuration>
+        <AllowMultiple>false</AllowMultiple>
+      </Configuration>
+    </Field>
+    <Field name="Url" type="ShortText">
+      <DisplayName>$Ctd-Link,Url-DisplayName</DisplayName>
+      <Description>$Ctd-Link,Url-Description</Description>
+      <Configuration>
+        <Regex>.*</Regex>
+        <DefaultValue>http://</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="CssClass" type="ShortText">
+      <DisplayName>Css Class</DisplayName>
+      <Description>Css Class</Description>
+      <Configuration>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="LinkAttributes" type="ShortText">
+      <DisplayName>Link Attributes</DisplayName>
+      <Description>Link Attributes</Description>
+      <Configuration>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+  </Fields>
+</ContentType>

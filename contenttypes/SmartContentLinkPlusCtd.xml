@@ -1,0 +1,48 @@
+﻿<ContentType name="SmartContentLinkPlus" parentType="ContentLinkPlus" handler="SenseNet.LinkedContent.ContentHandlers.SmartContentLinkPlus" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>Smart Content Link Plus</DisplayName>
+  <Description>Smart Content Link Plus</Description>
+  <Icon>ContentLink</Icon>
+  <Fields>
+    <Field name="Query" type="LongText">
+      <DisplayName>$Ctd-SmartFolder,Query-DisplayName</DisplayName>
+      <Description>$Ctd-SmartFolder,Query-Description</Description>
+      <Indexing>
+        <Mode>No</Mode>
+      </Indexing>
+      <Configuration>
+        <ControlHint>sn:QueryBuilder</ControlHint>
+      </Configuration>
+    </Field>
+    <Field name="EnableAutofilters" type="Choice">
+      <DisplayName>$Ctd-SmartFolder,EnableAutofilters-DisplayName</DisplayName>
+      <Description>$Ctd-SmartFolder,EnableAutofilters-Description</Description>
+      <Configuration>
+        <AllowMultiple>false</AllowMultiple>
+        <AllowExtraValue>false</AllowExtraValue>
+        <Options>
+          <Enum type="SenseNet.Search.FilterStatus" />
+        </Options>
+      </Configuration>
+    </Field>
+    <Field name="EnableLifespanFilter" type="Choice">
+      <DisplayName>$Ctd-SmartFolder,EnableLifespanFilter-DisplayName</DisplayName>
+      <Description>$Ctd-SmartFolder,EnableLifespanFilter-Description</Description>
+      <Configuration>
+        <AllowMultiple>false</AllowMultiple>
+        <AllowExtraValue>false</AllowExtraValue>
+        <Options>
+          <Enum type="SenseNet.Search.FilterStatus" />
+        </Options>
+      </Configuration>
+    </Field>
+    <Field name="Link" type="Reference">
+      <DisplayName>$Ctd-ContentLink,Link-DisplayName</DisplayName>
+      <Description>$Ctd-ContentLink,Link-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Hide</VisibleEdit>
+        <VisibleNew>Hide</VisibleNew>
+      </Configuration>
+    </Field>
+  </Fields>
+</ContentType>
