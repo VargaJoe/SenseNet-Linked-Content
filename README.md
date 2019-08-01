@@ -2,7 +2,7 @@
 Various solutions for linked content handling in sensenet
 
 # Idea behind it
-These are content handlers to handle soft linking external urls or hard linking another trepository Content. Basically you can create link or virtual contents.
+These are content handlers to handle soft linking external urls or hard linking another repository Content. Basically you can create link or virtual contents.
 
 # How it works
 1. install ctd for selected logic
